@@ -68,10 +68,10 @@ server {
         location = /50x.html {
             root html;
         }
-        location /static {
+        location /static/ {
             alias /home/panel/nano-cf-panel/static/;  #静态文件路径
         }
-    location /templates {
+        location /templates/ {
             alias /home/panel/nano-cf-panel/templates/;  #静态html模板路径
         }
     }
